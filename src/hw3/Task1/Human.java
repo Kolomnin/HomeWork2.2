@@ -9,55 +9,29 @@ public class Human {
     private int yearOfBirth;
     private String job;
 
+
+
     public Human(String name, String town, int yearOfBirth, String job) {
-        try {
-            if (!(name == null || name.equals(" "))) {
-                this.name = name;
-            }else {
-                this.name = "информация не указана";
-                throw new NullPointerException();
-            }
-        } catch (NullPointerException e) {
-            System.out.println(e + ": в поле NAME информация не указана");
-            System.exit(0);
-        }
 
-        try { if (!(town == null || town.equals(" "))) {
-            this.town = town;
-        } else {
-            this.town = "информация не указана";
-            throw new NullPointerException();
+         this.name = name;
+         if (name == null || name.equals("")) {
+            this.name = "информация не указана";
+         }
 
-        }
-        } catch (NullPointerException e) {
-            System.out.println(e + ": в поле TOWN информация не указана");
-            System.exit(0);
-        }
+         this.town = town;
+         if (town == null || town.equals("")) {
+         this.town = "информация не указана";
+         }
 
-        try { if (!(job == null || job.equals(" "))) {
-            this.job = job;
-        } else {
-            this.town = "информация не указана";
-            throw new NullPointerException();
+         this.job = job;
+         if (job == null || job.equals("")) {
+         this.job = "информация не указана";
+         }
 
+         this.yearOfBirth = date.getYear() - yearOfBirth;
+         if (yearOfBirth <= 0) {
+         this.yearOfBirth = 0;
         }
-        } catch (NullPointerException e) {
-            System.out.println(e + ": в поле JOB информация не указана");
-            System.exit(0);
-        }
-
-
-        try { if (yearOfBirth >= 0) {
-            this.yearOfBirth = date.getYear() - yearOfBirth;
-        } else {
-            this.yearOfBirth = 0;
-            throw new IllegalArgumentException();
-        }
-        } catch (IllegalArgumentException e) {
-            System.out.println(e + ". Invalid age: " + yearOfBirth);
-            System.exit(0);
-        }
-
     }
 
     @Override

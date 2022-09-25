@@ -5,33 +5,33 @@ import java.util.Date;
 public class Main {
     static Date date = new Date();
     public static void main(String[] args) {
-        Human Maxim = new Human();
-        Maxim.name = "Максим";
-        Maxim.town = "Минск";
-        Maxim.yearOfBirth = 1900 + date.getYear() - 35;
-        Maxim.job = "бренд-менеджер";
-        Maxim.person();
+        Human maxim = new Human();
+        maxim.name = "Максим";
+        maxim.town = "Минск";
+        maxim.yearOfBirth = 1900 + date.getYear() - 35;
+        maxim.job = "бренд-менеджер";
+        maxim.person();
 
-        Human Anya = new Human();
-        Anya.name = "Аня";
-        Anya.town = "Москва";
-        Anya.yearOfBirth = 1900 + date.getYear() - 29;
-        Anya.job = "методист образовательных программ";
-        Anya.person();
+        Human anya = new Human();
+        anya.name = "Аня";
+        anya.town = "Москва";
+        anya.yearOfBirth = 1900 + date.getYear() - 29;
+        anya.job = "методист образовательных программ";
+        anya.person();
 
-        Human Katya = new Human();
-        Katya.name = "Катя";
-        Katya.town = "Калининград";
-        Katya.yearOfBirth = 1900 + date.getYear() - 28;
-        Katya.job = "продакт-менеджер";
-        Katya.person();
+        Human katya = new Human();
+        katya.name = "Катя";
+        katya.town = "Калининград";
+        katya.yearOfBirth = 1900 + date.getYear() - 28;
+        katya.job = "продакт-менеджер";
+        katya.person();
 
-        Human Artjom = new Human();
-        Artjom.name = "Артем";
-        Artjom.town = "Москва";
-        Artjom.yearOfBirth = 1900 + date.getYear() - 27;
-        Artjom.job = "директор по развитию бизнеса";
-        Artjom.person();
+        Human artjom = new Human();
+        artjom.name = "Артем";
+        artjom.town = "Москва";
+        artjom.yearOfBirth = 1900 + date.getYear() - 27;
+        artjom.job = "директор по развитию бизнеса";
+        artjom.person();
 
     }
 }
